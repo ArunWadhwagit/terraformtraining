@@ -1,7 +1,7 @@
-# resource "aws_instance" "example" {
-#     ami           = "ami-005e54dee72cc1d00"
-#     instance_type = "t2.micro"
-# }
+resource "aws_instance" "example" {
+    ami           = "ami-005e54dee72cc1d00"
+    instance_type = "t2.micro"
+}
 
 # # provider "azurerm" {
 # #     version = "~>2.0"
@@ -169,10 +169,10 @@
 # ami           = "ami-005e54dee72cc1d00"
 # instance_type = "t2.micro"
 # }
-resource "aws_instance" "prod" {
-ami           = "ami-005e54dee72cc1d00"
-instance_type = "t2.micro"
-tags = {
-    Name = "web - ${terraform.workspace}"
-}
-}
+# resource "aws_instance" "prod" {
+# ami           = "ami-005e54dee72cc1d00"
+# instance_type = "t2.micro"
+# tags = {
+#     Name = "web - ${terraform.workspace}"
+# }
+# }
