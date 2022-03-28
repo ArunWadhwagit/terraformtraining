@@ -1,6 +1,9 @@
 resource "aws_instance" "example" {
     ami           = "ami-00ee4df451840fa9d"
     instance_type = "t2.micro"
+    tags = {
+        "Name" = "firstec2"
+    }
 }
 
 # # provider "azurerm" {
