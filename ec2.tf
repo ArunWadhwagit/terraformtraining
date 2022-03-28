@@ -1,7 +1,7 @@
-# resource "aws_instance" "example" {
-#     ami           = "ami-00ee4df451840fa9d"
-#     instance_type = "t2.micro"
-# }
+resource "aws_instance" "example" {
+    ami           = "ami-00ee4df451840fa9d"
+    instance_type = "t2.micro"
+}
 
 # # provider "azurerm" {
 # #     version = "~>2.0"
