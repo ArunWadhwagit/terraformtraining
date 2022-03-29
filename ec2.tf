@@ -5,6 +5,14 @@ resource "aws_instance" "example" {
         "Name" = "firstec2-second"
     }
 }
+resource "aws_instance" "example" {
+    ami           = "ami-00ee4df451840fa9d"
+    instance_type = "t2.micro"
+    tags = {
+        "Name" = "fcostec2"
+    }
+}
+
 
 # # provider "azurerm" {
 # #     version = "~>2.0"
