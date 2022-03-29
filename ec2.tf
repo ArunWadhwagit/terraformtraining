@@ -5,7 +5,7 @@ resource "aws_instance" "example" {
         "Name" = "firstec2-second"
     }
 }
-resource "aws_instance" "example" {
+resource "aws_instance" "exampleagain" {
     ami           = "ami-00ee4df451840fa9d"
     instance_type = "t2.micro"
     tags = {
